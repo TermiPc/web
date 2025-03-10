@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.container {
+    width: 300px;
+    margin: 100px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+input, textarea, button {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.semaforo {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+}
+
+.semaforo span {
+    width: 30px;
+    height: 30px;
+    margin: 5px;
+    border-radius: 50%;
+    display: inline-block;
+    background-color: gray;
+}
+
+#rojo.active { background-color: red; }
+#amarillo.active { background-color: yellow; }
+#verde.active { background-color: green; }
