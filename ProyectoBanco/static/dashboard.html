@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Banco - PQRS</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Sistema PQRS</h2>
+        <form id="pqrsForm">
+            <textarea id="pqrsMensaje" placeholder="Escribe tu PQRS aquí..." required></textarea>
+            <input type="text" id="nombre" placeholder="Nombre" required>
+            <input type="email" id="correo" placeholder="Correo" required>
+            <input type="tel" id="telefono" placeholder="Teléfono" required>
+            <button type="submit">Enviar</button>
+        </form>
+        <div id="estadoPQRS">
+            <p>Estado de la solicitud:</p>
+            <div class="semaforo">
+                <span id="rojo"></span>
+                <span id="amarillo"></span>
+                <span id="verde"></span>
+            </div>
+        </div>
+    </div>
+    <script src="js/script.js"></script>
+</body>
+</html>
